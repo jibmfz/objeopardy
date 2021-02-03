@@ -1008,6 +1008,20 @@ img, iframe {
     background: none;
 }
 
+#clue {
+    opacity: 0;
+    font-size: 60px;
+}
+
+.clue {
+    transition: 1s;
+}
+
+#clue:hover {
+    opacity: 1;
+}
+
+
 .resizing {
     transition:none !important;
 }
@@ -1015,14 +1029,14 @@ img, iframe {
             </style>
             
         
-            <script type="text/javascript">
+<script type="text/javascript">
+
                 function removeClass(selector, cls){
     var doms = document.querySelectorAll(selector);
     for(var i = 0; i < doms.length; i++){
         doms[i].classList.remove(cls);
     }
 }
-
 
 function debounce(func, wait, immediate) {
 	var timeout;
@@ -2220,7 +2234,8 @@ function mini(){
                         
                             <div class="cell points">
                                 <div class="cell-inner">200</div>
-                                <div class="front answer" tabindex="0">These two sexually-transmitted organisms are classically found in cases of Pelvic Inflammatory Disease.</div>
+                                <div class="front answer" tabindex="0">These two sexually-transmitted organisms are classically found in cases of Pelvic Inflammatory Disease.
+                                </div>
                                 <div class="back question" tabindex="0">What are <i>Neisseria gonorrhoeae</i> and <i>Chlamydia trachomatis</i>?</div>
                             </div>
                         
@@ -2445,7 +2460,8 @@ function mini(){
                         
                             <div class="cell points">
                                 <div class="cell-inner">400</div>
-                                <div class="front answer" tabindex="0">Itong sikat na Filipina actress/host ay ‘di umanong nahawaan ni Joey Marquez ng isang STI.</div>
+                                <div class="front answer" tabindex="0"><p style="font-size: 100px;">DAILY DOUBLE</p>
+                                    <p id="clue" class="clue">Itong sikat na Filipina actress/host ay ‘di umanong nahawaan ni Joey Marquez ng isang STI.</p></div>
                                 <div class="back question" tabindex="0">Sino si Kris Aquino?
                                     <br>
                                     <img src="https://cnnphilippines.com/.imaging/mte/demo-cnn-new/750x450/dam/cnn/2017/3/16/Kris-2.jpg/jcr:content/Kris-2.jpg" width="500px">
@@ -2478,7 +2494,8 @@ function mini(){
                         
                             <div class="cell points">
                                 <div class="cell-inner">600</div>
-                                <div class="front answer" tabindex="0">This is the classic triad of congenital toxoplasmosis.</div>
+                                <div class="front answer" tabindex="0">DAILY DOUBLE
+                                    <p id="clue" class="clue">This is the classic triad of congenital toxoplasmosis.</p></div>
                                 <div class="back question" tabindex="0">What is chorioretinitis, intracranial arteriosclerosis/calcifications, and hydrocephalus?
                                     <br>
                                     <p style="font-size: 20px;">(Williams 25e, 2744-2746)</p></div>
@@ -2645,7 +2662,8 @@ function mini(){
                         
                             <div class="cell points">
                                 <div class="cell-inner">800</div>
-                                <div class="front answer" tabindex="0">This phenomenon is caused by the lysis of microbes releasing highly inflammatory endotoxins during treatment.</div>
+                                <div class="front answer" tabindex="0">DAILY DOUBLE
+                                    <p id="clue" class="clue">This phenomenon is caused by the lysis of microbes releasing highly inflammatory endotoxins during treatment.</p></div>
                                 <div class="back question" tabindex="0">What is the Jarisch–Herxheimer reaction?</div>
                             </div>
                         
